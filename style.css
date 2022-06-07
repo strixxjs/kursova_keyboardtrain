@@ -726,3 +726,6 @@ body {
 	font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */
+.pressed {
+	background-color: #3d5661 !important ;
+}
