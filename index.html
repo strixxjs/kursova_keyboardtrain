@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
-		<title>kursova_keyboardtrain</title>
-		<link rel="stylesheet" href="src/style.css" />
-		<link rel="stylesheet" href="style.css"/>
+		<title>Клавіатурний тренажер</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap&subset=cyrillic-ext"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
-		<!-- Логотип та результати -->
+		<!-- Лого та результати -->
 		<div class="container">
 			<div class="logo">
-				<i class="fas fa-keyboard"></i> Клавітурний тренажер
+				<i class="fas fa-keyboard"></i> Клавиатурный тренажер
 			</div>
 
 			<!-- Результати -->
@@ -49,7 +56,7 @@
 			</div>
 			<!-- // Результати -->
 		</div>
-		<!-- // Лого та результати -->
+		<!-- // Логотип та результати -->
 
 		<div class="devider"></div>
 
@@ -67,31 +74,26 @@
 			<!-- // Input field -->
 
 			<!-- Текст -->
-			<!-- <div class="text error"> -->
 			<div class="text" id="textExample">
-				<div class="line line-1">
-					<span class="done"> На передньому плані, прямо перед</span>
-					<span class="hint">н</span>ами, розташований дворик, де стояв
-				</div>
-				<div class="line">
-					наполовину очищений автомобіль. Шофер Остін був цього разу
-				</div>
-				<div class="line">
-					звільнений остаточно та безповоротно. Він розкинувся на землі,
-				</div>
-				<div class="line hidden">
-					і велика чорна садна на лобі свідчила, мабуть, про те,
-				</div>
-				<div class="line hidden">
-					що він при падінні вдарився головою об підніжку чи щит.
+				<div>
+					<div class="line line-1">
+						<span class="done"> На передньому плані, прямо перед</span>
+						<span class="hint">н</span>ами, розташований був дворик, де стояв
+					</div>
+					<div class="line">
+						наполовину вичищенний автомобіль. Шофер Остін був на цей раз
+					</div>
+					<div class="line">
+						вигнаний з кінцями і безповоротно. Він ліг на землі,
+					</div>
 				</div>
 			</div>
 			<!-- // Текст  -->
 
-			<!-- Клвіатура -->
+			<!-- Клавіатура -->
 			<div class="keyboard">
 				<div class="line">
-					<div id="letter_₴">₴</div>
+					<div id="letter_ё" data-letters="Ёё">₴</div>
 					<div id="letter_1" data-letters="1">1</div>
 					<div id="letter_2" data-letters="2">2</div>
 					<div id="letter_3" data-letters="3">3</div>
@@ -102,12 +104,14 @@
 					<div id="letter_8" data-letters="8">8</div>
 					<div id="letter_9" data-letters="9">9</div>
 					<div id="letter_0" data-letters="0">0</div>
-					<div id="letter_minus" data-spec="minus">-</div>
-					<div id="letter_plus" data-spec="plus">+</div>
-					<div class="backspace" id="letter_backspace" data-spec="Backspace">Backspace</div>
+					<div id="letter_minus" data-letters="-">-</div>
+					<div id="letter_plus" data-letters="+">+</div>
+					<div class="backspace" id="letter_backspace" data-spec="backspace">
+						Backspace
+					</div>
 				</div>
 				<div class="line">
-					<div class="tab" id="letter_tab" data-spec="Tab">Tab</div>
+					<div class="tab" id="letter_tab" data-spec="tab">Tab</div>
 					<div id="letter_й" data-letters="Йй">Й</div>
 					<div id="letter_ц" data-letters="Цц">Ц</div>
 					<div id="letter_у" data-letters="Уу">У</div>
@@ -115,17 +119,19 @@
 					<div id="letter_е" data-letters="Ее">Е</div>
 					<div id="letter_н" data-letters="Нн">Н</div>
 					<div id="letter_г" data-letters="Гг">Г</div>
-					<div id="letter_ш" data-letters="Шш">Ш</div>
+					<div id="letter_ш" data-letters="ШшIi">Ш</div>
 					<div id="letter_щ" data-letters="Щщ">Щ</div>
 					<div id="letter_з" data-letters="Зз">З</div>
 					<div id="letter_х" data-letters="Хх">Х</div>
-					<div id="letter_ї" data-letters="Її">Ї</div>
-					<div id="letter_slash" data-spec="\">\</div>
+					<div id="letter_ъ" data-letters="Її">Ї</div>
+					<div id="letter_slash" data-letters="\">\</div>
 				</div>
 				<div class="line">
-					<div class="caps" id="letter_capslock" data-spec="Caps-Lock">Caps Lock</div>
+					<div class="caps" id="letter_capslock" data-spec="capslock">
+						Caps Lock
+					</div>
 					<div id="letter_ф" data-letters="Фф">Ф</div>
-					<div id="letter_і" data-letters="Іі">І</div>
+					<div id="letter_ы" data-letters="Іі">І</div>
 					<div id="letter_в" data-letters="Вв">В</div>
 					<div id="letter_а" data-letters="Аа">А</div>
 					<div id="letter_п" data-letters="Пп">П</div>
@@ -134,13 +140,13 @@
 					<div id="letter_л" data-letters="Лл">Л</div>
 					<div id="letter_д" data-letters="Дд">Д</div>
 					<div id="letter_ж" data-letters="Жж">Ж</div>
-					<div id="letter_є" data-letters="Єє">Є</div>
-					<div class="enter" id="letter_enter" data-spec="Enter">Enter</div>
+					<div id="letter_э" data-letters="Ээ">Є</div>
+					<div class="enter" id="letter_enter" data-spec="enter">Enter</div>
 				</div>
 				<div class="line">
-					<div class="shift" data-letters="Shift">Shift</div>
+					<div class="shift" data-spec="shift">Shift</div>
 					<div id="letter_я" data-letters="Яя">Я</div>
-					<div id="letter_ч" data-letters="Чч">Ч</div>
+					<div id="letter_ч" data-letters="ЧчXx">Ч</div>
 					<div id="letter_с" data-letters="Сс">С</div>
 					<div id="letter_м" data-letters="Мм">М</div>
 					<div id="letter_и" data-letters="Ии">И</div>
@@ -148,12 +154,12 @@
 					<div id="letter_ь" data-letters="Ьь">Ь</div>
 					<div id="letter_б" data-letters="Бб">Б</div>
 					<div id="letter_ю" data-letters="Юю">Ю</div>
-					<div id="letter_dot" data-spec="dot">. <sup>,</sup></div>
-					<div class="shift" data-spec="Shift">Shift</div>
+					<div id="letter_dot" data-letters=".,">. <sup>,</sup></div>
+					<div class="shift" data-spec="shift">Shift</div>
 				</div>
 				<div class="line">
 					<div class="space" id="letter_space" data-spec="space"></div>
-					<div class="alt" id="letter_alt" data-spec="Alt">Alt</div>
+					<div class="alt" id="letter_alt" data-spec="alt">Alt</div>
 				</div>
 			</div>
 			<!-- // Клавіатура -->
